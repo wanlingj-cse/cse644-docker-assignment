@@ -31,14 +31,18 @@ All source Dockerfiles, application code, configuration files, and lab evidence 
 
 ## 2. Pre-Lab: Full Docker Environment Reset (Start from Empty)
 Before demonstrating all lab steps, clear all existing Docker resources to a blank environment.
-### Run script: reset-docker.sh:
+### Run script: reset-docker.sh
+```bash
 chmod +x scripts/reset-docker.sh
 bash scripts/reset-docker.sh
+```
 
 ## 3. Step 1: Build All 3 Custom Docker Images (Evidence in Part 4,5,6 of CSE644_HW1_WanlingJiang.pdf)
 ### Run Script: build-all-images.sh
+```bash
 chmod +x scripts/build-all-images.sh
 bash scripts/build-all-images.sh
+```
 
 ## 4. Step 2: Persistent Volume Demonstration (Evidence in Part 8 of CSE644_HW1_WanlingJiang.pdf)
 ```bash
