@@ -1,33 +1,33 @@
 # CSE644 Docker Assignment Submission
 ## Basic Submission Info
-Student Name: Wanling Jiang
-GitHub Username: wanlingj-cse
-GitHub Repository Link: https://github.com/wanlingj-cse/cse644-docker-assignment/tree/master
-Docker Hub Username: wanlingj
-Docker Hub Profile Link: https://hub.docker.com/u/wanlingj
-Custom Nginx Web Image: https://hub.docker.com/repository/docker/wanlingj/cse644-nginx/general
-Python HTTP Server Image: https://hub.docker.com/repository/docker/wanlingj/cse644-python-web/general
-HAProxy Load Balancer Image: https://hub.docker.com/repository/docker/wanlingj/cse644-haproxy/general
+Student Name: Wanling Jiang<br>
+GitHub Username: wanlingj-cse<br>
+GitHub Repository Link: https://github.com/wanlingj-cse/cse644-docker-assignment/tree/master<br>
+Docker Hub Username: wanlingj<br>
+Docker Hub Profile Link: https://hub.docker.com/u/wanlingj<br>
+Custom Nginx Web Image: https://hub.docker.com/repository/docker/wanlingj/cse644-nginx/general<br>
+Python HTTP Server Image: https://hub.docker.com/repository/docker/wanlingj/cse644-python-web/general<br>
+HAProxy Load Balancer Image: https://hub.docker.com/repository/docker/wanlingj/cse644-haproxy/general<br>
 
 ## Project Overview
 This assignment demonstrates core Docker concepts including custom image building, multi-container deployment, three Docker network modes (bridge / host / none), persistent volume storage, and HAProxy load balancing for Nginx web servers.
 All source Dockerfiles, application code, configuration files, and lab evidence screenshots/logs are contained within this repository.
 ## 1. Repository File Structure
-├── README.md                     # Assignment documentation (this file)
-├── cse644-web-custom/            # Custom Nginx static web image
-│   ├── Dockerfile
-│   └── index.html                # Custom personalized web page
-├── cse644-python-web/            # Python simple HTTP server image
-│   ├── Dockerfile
-│   └── app.py                    # Python web source code
-├── cse644-haproxy-nginx/         # HAProxy load balancer config
-│   ├── Dockerfile
-│   └── haproxy.cfg               # Routing config to backend Nginx containers
-├── scripts/                      # Automatic build, push, reset scripts
-│   ├── build-all-images.sh       # Build 3 custom Docker images at once
-│   ├── push-images-dockerhub.sh  # Tag and upload images to Docker Hub
-│   └── reset-docker.sh           # Wipe all containers, images, volumes, networks
-├── CSE644_HW1_WanlingJiang.pdf   # All the evidence screenshots and terminal logs
+├── README.md                     # Assignment documentation (this file) <br>
+├── cse644-web-custom/            # Custom Nginx static web image <br>
+│   ├── Dockerfile <br>
+│   └── index.html                # Custom personalized web page <br>
+├── cse644-python-web/            # Python simple HTTP server image <br>
+│   ├── Dockerfile <br>
+│   └── app.py                    # Python web source code<br>
+├── cse644-haproxy-nginx/         # HAProxy load balancer config <br>
+│   ├── Dockerfile <br>
+│   └── haproxy.cfg               # Routing config to backend Nginx containers <br>
+├── scripts/                      # Automatic build, push, reset scripts <br>
+│   ├── build-all-images.sh       # Build 3 custom Docker images at once <br>
+│   ├── push-images-dockerhub.sh  # Tag and upload images to Docker Hub <br>
+│   └── reset-docker.sh           # Wipe all containers, images, volumes, networks <br>
+├── CSE644_HW1_WanlingJiang.pdf   # All the evidence screenshots and terminal logs <br>
 
 ## 2. Pre-Lab: Full Docker Environment Reset (Start from Empty)
 Before demonstrating all lab steps, clear all existing Docker resources to a blank environment.
